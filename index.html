@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dentist'Art Saidani | عيادة أسنان</title>
+<meta name="description" content="Dentist'Art Saidani: عيادة أسنان تجمع بين الفن وصحة الأسنان. تبييض، تقويم، جراحة الفم وعلاج الجذور.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { gold: { DEFAULT: '#D9B25F', light: '#F0D58C', dark: '#A8812F' }, wood: '#C9975B' },
+  fontFamily: { sans: ['Cairo', 'sans-serif'], display: ['Playfair Display', 'Cairo', 'serif'] }
+}}}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background: #020617; }
+  .glass { background: rgba(255,255,255,.06); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid rgba(217,178,95,.25); }
+  .gold-text { background: linear-gradient(90deg,#F0D58C,#D9B25F,#A8812F); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .btn-gold { background: linear-gradient(135deg,#F0D58C,#D9B25F 55%,#A8812F); color: #0b1220; }
+  .pulse-ring::before { content:''; position:absolute; inset:0; border-radius:9999px; background:#25D366; animation: pulse 2s infinite; z-index:-1; }
+  @keyframes pulse { 0%{transform:scale(1);opacity:.7} 100%{transform:scale(1.8);opacity:0} }
+  details summary { list-style: none; cursor: pointer; }
+  details summary::-webkit-details-marker { display: none; }
+  details[open] .chev { transform: rotate(180deg); }
+  .chev { transition: transform .25s; }
+  @media (prefers-reduced-motion: reduce) { .pulse-ring::before { animation: none; } html { scroll-behavior: auto; } }
+  :focus-visible { outline: 2px solid #F0D58C; outline-offset: 3px; }
+</style>
+</head>
+<body class="font-sans text-slate-200 antialiased">
+
+<!-- Header -->
+<header class="fixed top-0 inset-x-0 z-40 bg-slate-950/80 backdrop-blur border-b border-gold/20">
+  <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-3">
+      <img src="images/logo.jpg" alt="شعار العيادة" class="h-10 w-16 object-cover rounded">
+      <span class="font-display text-gold text-lg" dir="ltr">Dentist'Art Saidani</span>
+    </a>
+    <nav class="hidden md:flex gap-6 text-sm">
+      <a href="#gallery" class="hover:text-gold">العيادة</a>
+      <a href="#services" class="hover:text-gold">الخدمات</a>
+      <a href="#results" class="hover:text-gold">النتائج</a>
+      <a href="#reviews" class="hover:text-gold">آراء المرضى</a>
+      <a href="#faq" class="hover:text-gold">الأسئلة</a>
+    </nav>
+    <a href="tel:0555723396" class="btn-gold rounded-full px-4 py-2 text-sm font-bold">اتصل بنا</a>
+  </div>
+</header>
+
+<main id="top">
+<!-- Hero -->
+<section class="relative min-h-screen flex items-center pt-16">
+  <img src="images/clinic-reception.jpg" alt="استقبال عيادة Dentist'Art Saidani" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-gradient-to-l from-slate-950/95 via-slate-950/80 to-slate-950/50"></div>
+  <div class="relative max-w-6xl mx-auto px-4 py-20 w-full">
+    <div class="max-w-2xl">
+      <p class="text-wood mb-4 font-semibold">عيادة جراحة الأسنان</p>
+      <h1 class="text-4xl sm:text-6xl font-bold leading-tight text-white">
+        الابتسامة <span class="gold-text">لوحة فنية</span>،<br>ونحن نرسمها بعناية
+      </h1>
+      <p class="mt-6 text-lg text-slate-300 leading-8">
+        في Dentist'Art Saidani نجمع بين دقة الطب وذوق الفنان: علاج هادئ، تجهيزات حديثة، ونتائج تبدو طبيعية وتدوم.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="https://wa.me/213555723396?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF%20%D9%81%D9%8A%20%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9%20Dentist%27Art%20Saidani"
+           target="_blank" rel="noopener" class="btn-gold rounded-full px-8 py-4 font-bold text-lg shadow-lg shadow-gold/20 hover:scale-105 transition">احجز موعدك عبر واتساب</a>
+        <a href="#services" class="glass rounded-full px-8 py-4 font-semibold text-gold-light hover:bg-white/10 transition">تعرّف على خدماتنا</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="py-20 bg-slate-950">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center gold-text">جولة داخل العيادة</h2>
+    <p class="text-center text-slate-400 mt-3 mb-10">أجواء مريحة تزيل رهبة الأسنان</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:grid-rows-2">
+      <img src="images/clinic-sign.jpg" alt="شعار العيادة على الجدار الأزرق" loading="lazy" class="col-span-2 md:row-span-2 w-full h-full object-cover rounded-2xl border border-gold/20">
+      <img src="images/clinic-reception.jpg" alt="الأرائك الزرقاء وكونتوار الاستقبال" loading="lazy" class="w-full h-44 md:h-full object-cover rounded-2xl border border-gold/20">
+      <img src="images/clinic-lounge.jpg" alt="قاعة الانتظار والإضاءة الدافئة" loading="lazy" class="w-full h-44 md:h-full object-cover rounded-2xl border border-gold/20">
+      <img src="images/clinic-office.jpg" alt="مكتب الطبيب والشهادات" loading="lazy" class="col-span-2 w-full h-48 md:h-full object-cover object-center rounded-2xl border border-gold/20">
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-20 bg-gradient-to-b from-slate-950 to-slate-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center gold-text">خدماتنا</h2>
+    <p class="text-center text-slate-400 mt-3 mb-12">علاجات أساسية بمعايير عالية</p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <article class="glass rounded-2xl p-6">
+        <svg class="w-10 h-10 text-gold mb-4" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M12 3l1.8 4.7L18.5 9l-4.7 1.8L12 15.5l-1.8-4.7L5.5 9l4.7-1.3L12 3zM19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15z"/></svg>
+        <h3 class="text-xl font-bold text-white mb-2">تبييض الأسنان</h3>
+        <p class="text-slate-400 leading-7">أسنان أفتح بدرجات مع الحفاظ على بريقها الطبيعي وسلامة المينا.</p>
+      </article>
+      <article class="glass rounded-2xl p-6">
+        <svg class="w-10 h-10 text-gold mb-4" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M3 9h18M3 15h18M7 6v12M12 6v12M17 6v12" stroke-linecap="round"/></svg>
+        <h3 class="text-xl font-bold text-white mb-2">تقويم الأسنان</h3>
+        <p class="text-slate-400 leading-7">تصحيح اصطفاف الأسنان والإطباق للصغار والكبار، بخطة واضحة ومتابعة منتظمة.</p>
+      </article>
+      <article class="glass rounded-2xl p-6">
+        <svg class="w-10 h-10 text-gold mb-4" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M14 3l7 7-4 4-7-7 4-4zM10 7l-7 14 14-7" stroke-linejoin="round"/></svg>
+        <h3 class="text-xl font-bold text-white mb-2">جراحة الفم</h3>
+        <p class="text-slate-400 leading-7">قلع الأسنان المعقّد وأسنان العقل وزراعة الأسنان، مع تخدير مريح ومتابعة بعد العملية.</p>
+      </article>
+      <article class="glass rounded-2xl p-6">
+        <svg class="w-10 h-10 text-gold mb-4" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path d="M12 21c-1-4-3-6-3-10a3 3 0 016 0c0 4-2 6-3 10zM12 8V3" stroke-linecap="round"/></svg>
+        <h3 class="text-xl font-bold text-white mb-2">علاج جذور الأسنان</h3>
+        <p class="text-slate-400 leading-7">إنقاذ السن المتضرر بدل قلعه، بعلاج دقيق يُنهي الألم ويحمي السن.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Before / After -->
+<section id="results" class="py-20 bg-slate-900">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center gold-text">نتائج حقيقية</h2>
+    <p class="text-center text-slate-400 mt-3 mb-12">ابتسامات تغيّرت قبل وبعد العلاج</p>
+    <div class="grid md:grid-cols-2 gap-6">
+      <figure class="glass rounded-2xl p-3">
+        <div class="grid grid-cols-2 gap-2">
+          <div class="relative"><img src="images/case-before.jpg" alt="حالة قبل العلاج" loading="lazy" class="rounded-xl aspect-square object-cover w-full"><span class="absolute top-2 right-2 bg-slate-950/80 text-gold-light text-xs px-3 py-1 rounded-full">قبل</span></div>
+          <div class="relative"><img src="images/case-after.jpg" alt="الحالة نفسها بعد التركيب" loading="lazy" class="rounded-xl aspect-square object-cover w-full"><span class="absolute top-2 right-2 btn-gold text-xs px-3 py-1 rounded-full font-bold">بعد</span></div>
+        </div>
+        <figcaption class="p-3 text-slate-300">إعادة تأهيل الأسنان الأمامية بتيجان وتركيبات متحركة</figcaption>
+      </figure>
+      <figure class="glass rounded-2xl p-3">
+        <img src="images/smile-1.jpg" alt="ابتسامة قبل وبعد التجميل" loading="lazy" class="rounded-xl aspect-square object-cover w-full">
+        <figcaption class="p-3 text-slate-300">من الأعلى: قبل العلاج. من الأسفل: بعد تجميل الأسنان</figcaption>
+      </figure>
+      <figure class="glass rounded-2xl p-3">
+        <img src="images/smile-2.jpg" alt="ابتسامة جديدة بعد التيجان" loading="lazy" class="rounded-xl w-full max-h-[34rem] object-cover">
+        <figcaption class="p-3 text-slate-300">استبدال تيجان قديمة بتركيبات بيضاء طبيعية الشكل</figcaption>
+      </figure>
+      <figure class="glass rounded-2xl p-3">
+        <img src="images/whitening.jpg" alt="تبييض الأسنان قبل وبعد" loading="lazy" class="rounded-xl w-full max-h-[34rem] object-cover object-top">
+        <figcaption class="p-3 text-slate-300">تبييض الأسنان: ابتسامة أفتح بخطوات مدروسة</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="reviews" class="py-20 bg-slate-950">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center gold-text">آراء المرضى</h2>
+    <p class="text-center text-slate-400 mt-3 mb-12">ما يقوله من جرّبوا العيادة</p>
+    <!-- استبدل النصوص والأسماء بتقييمات مرضاك الفعلية (مثل تقييمات Google Maps) -->
+    <div class="grid md:grid-cols-3 gap-5">
+      <blockquote class="glass rounded-2xl p-6">
+        <p class="text-gold mb-3" aria-label="5 نجوم">★★★★★</p>
+        <p class="leading-8 text-slate-300">استقبال راقٍ وطبيب يشرح كل خطوة قبل أن يبدأ. لم أشعر بأي ألم أثناء العلاج.</p>
+        <footer class="mt-4 text-sm text-gold-light">مريض - تبييض الأسنان</footer>
+      </blockquote>
+      <blockquote class="glass rounded-2xl p-6">
+        <p class="text-gold mb-3" aria-label="5 نجوم">★★★★★</p>
+        <p class="leading-8 text-slate-300">النتيجة فاقت توقعي. ابتسامتي صارت طبيعية وأثق بها في الصور وأمام الناس.</p>
+        <footer class="mt-4 text-sm text-gold-light">مريضة - تجميل الأسنان</footer>
+      </blockquote>
+      <blockquote class="glass rounded-2xl p-6">
+        <p class="text-gold mb-3" aria-label="5 نجوم">★★★★★</p>
+        <p class="leading-8 text-slate-300">مواعيد منظمة ونظافة عالية. عالجت سنّي بدل قلعه وأنا ممتن لذلك.</p>
+        <footer class="mt-4 text-sm text-gold-light">مريض - علاج الجذور</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-20 bg-gradient-to-b from-slate-950 to-slate-900">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center gold-text mb-12">الأسئلة الشائعة</h2>
+    <div class="space-y-3">
+      <details class="glass rounded-xl p-5">
+        <summary class="flex justify-between items-center font-semibold text-white">كيف أحجز موعداً؟
+          <svg class="chev w-5 h-5 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <p class="mt-3 text-slate-400 leading-7">أرسل لنا رسالة عبر واتساب أو اتصل بأحد الرقمين: 0555723396 / 0655562577، وسنؤكد لك الموعد المناسب.</p>
+      </details>
+      <details class="glass rounded-xl p-5">
+        <summary class="flex justify-between items-center font-semibold text-white">كم تكلفة الاستشارة الأولى؟
+          <svg class="chev w-5 h-5 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <p class="mt-3 text-slate-400 leading-7">سعر الاستشارة يختلف حسب الحالة. تواصل معنا وسنخبرك بالسعر قبل الموعد، وبعد الفحص نعطيك خطة علاج وتكلفتها بوضوح.</p>
+      </details>
+      <details class="glass rounded-xl p-5">
+        <summary class="flex justify-between items-center font-semibold text-white">هل يمكنني تغيير موعدي أو إلغاؤه؟
+          <svg class="chev w-5 h-5 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <p class="mt-3 text-slate-400 leading-7">نعم، أخبرنا قبل الموعد بوقت كافٍ عبر واتساب أو الهاتف لنعيد جدولته لك أو لمريض آخر.</p>
+      </details>
+      <details class="glass rounded-xl p-5">
+        <summary class="flex justify-between items-center font-semibold text-white">هل التبييض آمن على الأسنان؟
+          <svg class="chev w-5 h-5 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <p class="mt-3 text-slate-400 leading-7">يُجرى التبييض بعد فحص الأسنان واللثة وبحماية اللثة بمادة عازلة (الظاهرة باللون الأزرق في الصور). الطبيب يحدد إن كانت حالتك مناسبة.</p>
+      </details>
+      <details class="glass rounded-xl p-5">
+        <summary class="flex justify-between items-center font-semibold text-white">هل علاج الجذور مؤلم؟
+          <svg class="chev w-5 h-5 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></summary>
+        <p class="mt-3 text-slate-400 leading-7">يتم العلاج تحت التخدير الموضعي، ومعظم المرضى يشعرون بارتياح بعده لأن مصدر الألم يزول.</p>
+      </details>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-slate-950 border-t border-gold/20 pt-14 pb-24">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-10">
+    <div>
+      <img src="images/logo.jpg" alt="Dentist'Art Saidani" class="h-16 rounded mb-4">
+      <p class="text-slate-400 leading-7">عيادة أسنان تجمع بين الفن وصحة الأسنان.</p>
+    </div>
+    <div>
+      <h3 class="text-gold font-bold mb-4">اتصل بنا</h3>
+      <ul class="space-y-2" dir="ltr" style="text-align:right">
+        <li><a href="tel:0555723396" class="hover:text-gold">0555 72 33 96</a></li>
+        <li><a href="tel:0655562577" class="hover:text-gold">0655 56 25 77</a></li>
+      </ul>
+      <a href="https://maps.app.goo.gl/3MvMQZyvr255MuqH7?g_st=ac" target="_blank" rel="noopener" class="inline-block mt-5 btn-gold rounded-full px-6 py-3 font-bold">افتح في خرائط جوجل</a>
+    </div>
+    <div>
+      <h3 class="text-gold font-bold mb-4">ساعات العمل</h3>
+      <!-- عدّل الأيام والساعات حسب دوام العيادة الفعلي -->
+      <ul class="space-y-2 text-slate-300">
+        <li class="flex justify-between"><span>السبت - الأربعاء</span><span dir="ltr">09:00 - 17:00</span></li>
+        <li class="flex justify-between"><span>الخميس</span><span dir="ltr">09:00 - 13:00</span></li>
+        <li class="flex justify-between"><span>الجمعة</span><span>مغلق</span></li>
+      </ul>
+    </div>
+  </div>
+  <p class="text-center text-slate-500 text-sm mt-12" dir="ltr">© 2026 Dentist'Art Saidani</p>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/213555723396?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF%20%D9%81%D9%8A%20%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9%20Dentist%27Art%20Saidani"
+   target="_blank" rel="noopener" aria-label="احجز عبر واتساب"
+   class="pulse-ring fixed bottom-5 left-5 z-50 w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center shadow-xl">
+  <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.2 14.1c-.2.6-1.300 1.200-1.800 1.200-.5.100-1.100.100-1.800-.1-.4-.1-1-.3-1.700-.6-3-1.300-4.900-4.300-5-4.500-.1-.2-1.200-1.600-1.200-3s.8-2.100 1-2.400c.3-.3.600-.3.800-.3h.6c.2 0 .4 0 .6.500l.8 2c.1.2.1.300 0 .5l-.3.400-.4.500c-.1.100-.3.300-.1.600.2.300.7 1.200 1.500 1.900 1 .9 1.900 1.200 2.200 1.300.3.100.4.100.6-.1l.8-1c.2-.3.400-.2.600-.1l1.900.9c.3.100.5.200.5.300.1.200.1.800-.1 1.400z"/></svg>
+</a>
+</body>
+</html>
